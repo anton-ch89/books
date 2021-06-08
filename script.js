@@ -1,9 +1,7 @@
 "use strict";
 
 const books = document.querySelector('.books');
-console.log(books);
 const book = document.querySelectorAll('.book');
-console.log('book: ', book);
 
 // Книги по прорядку
 book[0].before(book[1]);
@@ -17,7 +15,6 @@ document.body.style.background = 'url(./image/you-dont-know-js.jpg)';
 
 //Получаем коллекцию глав
 const chaptersBooks = document.querySelectorAll('div.book>ul>li');
-console.log('chaptersBooks: ', chaptersBooks);
 
 //Исправляем заголовок
 const links = document.querySelectorAll('a');
@@ -32,7 +29,7 @@ chaptersBooks[10].before(chaptersBooks[12]);
 chaptersBooks[10].before(chaptersBooks[14]);
 chaptersBooks[15].after(chaptersBooks[8]);
 
-//Книга 5 гглавы по порядку 
+//Книга 5 главы по порядку 
 chaptersBooks[40].after(chaptersBooks[38]);
 chaptersBooks[37].after(chaptersBooks[45]);
 chaptersBooks[43].after(chaptersBooks[41]);
