@@ -13,8 +13,6 @@ book[3].after(book[5]);
 document.body.style.background = 'url(./image/you-dont-know-js.jpg)';
 
 
-//Получаем коллекцию глав
-const chaptersBooks = document.querySelectorAll('div.book>ul>li');
 
 //Исправляем заголовок
 const links = document.querySelectorAll('a');
@@ -23,6 +21,8 @@ links[2].innerText = 'Книга 3. this и Прототипы Объектов'
 //Удаляем баннер
 document.querySelector('.adv').remove();
 
+//Получаем коллекцию глав
+const chaptersBooks = document.querySelectorAll('div.book>ul>li');
 
 //Книга 2 главы по порядку
 chaptersBooks[10].before(chaptersBooks[12]);
